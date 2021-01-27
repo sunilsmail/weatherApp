@@ -1,0 +1,13 @@
+<article class="weather-element">
+    <div class="col-1">
+        <h3>{{ weatherItem.name }}</h3>
+        <p class="info">{{ weatherItem?.weather[0]?.description }}</p>
+    </div>
+    <div class="col-2">
+        <span class="temperature">{{ weatherItem?.main?.temp }}- Kelvin</span>
+    </div>
+    <div class="col-1">
+        <span class="temperature">Sunrise - {{  weatherItem?.sys?.sunrise | date }}</span> &nbsp;&nbsp;&nbsp;
+        <span class="temperature">Sunset - {{ weatherItem?.sys?.sunset | date }}</span>  
+    </div>
+</article>
