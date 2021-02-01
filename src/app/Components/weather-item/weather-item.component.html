@@ -1,6 +1,6 @@
 <article class="weather-element">
-    <div class="col-1">
-        <h3>{{ weatherItem.name }}</h3>
+    <div class="col-1">        
+        <h3 [routerLink]="['/weather-details', weatherItem.name]">{{ weatherItem.name }}</h3>
         <p class="info">{{ weatherItem?.weather[0]?.description }}</p>
     </div>
     <div class="col-2">

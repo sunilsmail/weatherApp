@@ -5,7 +5,7 @@ import { WeatherListComponent } from './Components/weather-list/weather-list.com
 
 const routes: Routes = [
   { path: 'weather-list', component: WeatherListComponent },
-  { path: 'weather-details', component: WeatherDetailsComponent },
+  { path: 'weather-details/:name', component: WeatherDetailsComponent },
   { path: '',   redirectTo: '/weather-list', pathMatch: 'full' },
   { path: '**', redirectTo: '/weather-list' },
 ];

@@ -39,3 +39,9 @@ article {
     width: 100%;
   }
 }
+
+h3{
+  color:blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

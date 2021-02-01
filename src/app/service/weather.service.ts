@@ -16,4 +16,11 @@ export class WeatherService {
     }`;
     return this.http.get<WeatherObj>(url);
   }
+
+  getWeatherCity(name: string): Observable<WeatherObj> {
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${
+      environment.ApiKey
+    }`;
+    return this.http.get<WeatherObj>(url);
+  }
 }
